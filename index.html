@@ -3,43 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Over</title>
+    <title>Penalty Shootout</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
 </head>
 <body>   
    <div class="container">
        <div class="row">
            <div class="col">
-               <img class="profile-icon" src="./assets/barcelona.png" alt="BARCELONA" height="150px" width="150px"/>
+               <img class="profile-icon" src="./assets/barcelona.png" alt="" height="150px" width="150px"/>
                <span class="name" id="team-1-name">BARCELONA</span>
-               <div class="row round runs" id="team-1-round-runs">
-               <span class="col">1</span>
-               <span class="col">2</span>
-               <span class="col">3</span>
-               <span class="col">4</span>
-               <span class="col">0</span>
+               <div class="row round-runs" id="team-1-round-runs">
+               <div class="prog" id="index"></div>
+               <div class="prog" id="index"></div>
+               <div class="prog"id="index" ></div>
+               <div class="prog"id="index" ></div>
+               <div class="prog" id="index"></div>
+               <div class="prog" id="index"></div>
                </div>
            </div>
            <div class="col">
-               <div class=row score>
-                   <span id="team-1-score">4</span>
+               <div class="row score">
+                   <span id="team-1-score"></span>
                    <span>-</span>
-                   <span id="team-2-score">2</span>
+                   <span id="team-2-score"></span>
                </div>
            </div>
            <div class="col">
-            <img class="profile-icon" src="./assets/manchester.png" alt="MANCHESTER" height="150px" width="150px"/>
+            <img class="profile-icon" src="./assets/manchester.png" alt="" height="150px" width="150px"/>
             <span class="name" id="team-2-name">MANCHESTER</span>
-            <div class="row round runs" id="team-2-round-runs">
-            <span class="col">1</span>
-            <span class="col">2</span>
-            <span class="col">3</span>
-            <span class="col">4</span>
-            <span class="col">0</span>
+            <div class="row round-runs" id="team-2-round-runs">
+                <div class="prog" id="index"></div>
+                <div class="prog" id="index"></div>
+                <div class="prog" id="index" ></div>
+                <div class="prog" id="index" ></div>
+                <div class="prog" id="index"></div>
+                <div class="prog" id="index"></div>
             </div>
            </div>
        </div>
+       <div class="row">
+            <button type="button" id='btn1' onclick="history.go(0)">Try Again</button>
+           <button id= "strike-button" onclick="handleStrikeButtonClick()"></button>
+       </div>
+       <div class="row" id="result" hidden></div>
 
    </div>
+  
 </body>
 </html>
